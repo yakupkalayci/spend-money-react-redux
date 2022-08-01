@@ -1,0 +1,38 @@
+.receiptContainer {
+    background-color: #fff;
+    padding: 1.5rem;
+    margin-top: 1rem;
+    border: 1px solid red;
+}
+
+.receipts {
+    width: 40%;
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.singleReceipt {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.receiptPTotal {
+    color: #EF629F;
+}
+
+.singleReceipt:last-child {
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+}
+
+.totalPrice {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding-top: 10px;
+}
