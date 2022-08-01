@@ -1,8 +1,13 @@
-import React from 'react'
+import React from 'react';
+import Product from "../Product";
+
+import "./styles.css";
 
 function Products() {
   return (
-    <div>Products</div>
+    <div className='productsContainer'>
+
+    </div>
   )
 }
 

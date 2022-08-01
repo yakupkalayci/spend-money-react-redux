@@ -1,0 +1,58 @@
+.productContainer {
+    width: 29%;
+    background-color: #fff;
+    padding: 1.5rem 1rem;
+}
+
+.productImg > img {
+    height: 120px;
+}
+
+.productInfos h3 {
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    margin-bottom: -20px;
+}
+
+.productInfos p {
+    font-weight: bold;
+    color: #EF629F;
+    font-size: 1.2rem;
+}
+
+.productButtons {
+    display: flex;
+    column-gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    width: 75px;
+    border-radius: 4px;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.buyBtn {
+    background-color: green;
+    color: white;
+}
+
+.sellBtn {
+    background-color: red;
+    color: white;
+}
+
+.amountInfo {
+    width: 60px;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+    border-radius: 4px;
+    border: 1px solid gray;
+}
