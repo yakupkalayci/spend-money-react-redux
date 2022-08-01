@@ -1,0 +1,11 @@
+header {
+    background-color: #fff;
+    padding: 2rem;
+    padding-bottom: 0.5rem;
+}
+
+.headerImg {
+    border-radius: 50%;
+    width: 125px;
+    height: auto;
+}
