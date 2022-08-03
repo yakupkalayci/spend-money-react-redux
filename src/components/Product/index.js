@@ -2,19 +2,19 @@ import React from "react";
 
 import "./styles.css";
 
-function Product() {
+function Product({img, title, price, amount}) {
   return (
     <div className="productContainer">
       <div className="productImg">
-        <img src="https://neal.fun/spend/images/big-mac.jpg" />
+        <img src={img} />
       </div>
       <div className="productInfos">
-        <h3>Big Mac</h3>
-        <p>$2</p>
+        <h3>{title}</h3>
+        <p>${price.toLocaleString()}</p>
       </div>
       <div className="productButtons">
         <button className="button sellBtn">Sell</button>
-        <input name="amount" className="amountInfo" />
+        <input name="amount" className="amountInfo" value={amount}/>
         <button className="button buyBtn">Buy</button>
       </div>
     </div>
