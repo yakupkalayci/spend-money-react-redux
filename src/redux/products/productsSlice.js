@@ -6,7 +6,9 @@ export const productsSlice = createSlice({
   name: "products",
   initialState: {
     products: AllProducts,
-    money: 100000000000,
+    initMoney: 100000000000,
+    end: 100000000000,
+    price: 0
   },
   reducers: {
     setAmount: (state, action) => {
@@ -25,7 +27,8 @@ export const productsSlice = createSlice({
             : product;
         });
 
-        state.money -= price;
+        state.end -= price;
+        state.price = price;
     },
     decrease: (state, action) => {
         const price = state.products.find(product => product.id === action.payload.id).price;
@@ -35,11 +38,12 @@ export const productsSlice = createSlice({
             ? { ...product, amount: product.amount-=1 }
             : product;
         });
-        state.money += price;
+        state.end += price;
+        state.price = price;
     },
     calcMoney: (state) => {
       state.products.forEach(
-        (product) => (state.money -= product.price * product.amount)
+        (product) => (state.end -= product.price * product.amount)
       );
     },
   },

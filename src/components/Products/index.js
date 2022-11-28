@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import { useSelector } from 'react-redux';
 import Product from "../Product";
 import "./styles.css";
@@ -6,10 +6,6 @@ import "./styles.css";
 function Products() {
 
   const products = useSelector(state => state.products.products);
-
-  useEffect(() => {
-    console.log(products);
-  }, [products]);
   
   return (
     <div className='productsContainer'>
